@@ -1,0 +1,15 @@
+{
+  "name": "jquery-contact-form",
+  "version": "1.0.0",
+  "description": "jQuery Contact Form",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mory Friedman",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "normalize.css": "^4.0.0"
+  }
+}
