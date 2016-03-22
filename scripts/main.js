@@ -1,9 +1,11 @@
-var button = $('button');
-var nameInput = $('.name-input')
-var websiteInput = $('.website-input');
-var emailInput = $('.email-input')
-var textarea = $('.textarea')
-var hasError = false;
+var button=$('button');
+var nameInput=$('.name-input');
+var websiteInput=$('.website-input');
+var emailInput=$('.email-input');
+var textarea=$('.textarea');
+var success=$('.success');
+var section=$('.section')
+var hasError=false;
 var error1=$('#error1');
 var error2=$('#error2');
 var error3=$('#error3');
@@ -35,9 +37,15 @@ button.on('click', function() {
 	}
 
 	if(!hasError===true){
-		main.css({display: 'none'});
-		success.css({display: 'block'});
-		success.html('Thanks for contacting us '+name.val()+'. We have received your message and will be in touch with you shortly.');
+		section.css({display: 'none'});
+		success.css({
+						display: 'block',
+						background: '#fff',
+						textAlign: 'center',
+						fontWeight: 'bold',
+						padding: '4em'
+					});
+		success.html('Thanks for contacting us '+nameInput.val()+'. We have received your message and will be in touch with you shortly.');
 
 	}
 });
